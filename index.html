@@ -1,10 +1,30 @@
-<html>
-	<head>
-		<title>Assignment 1</title>
-	</head>
-	<body>
-		This is Assigment #1!!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+</head>
+<body>
 
-		I've added login.html
-	</body>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <label for="name">Name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" required /><br />
+    </div>
+    <div class="row">
+        <label for="email">Email:</label><br />
+        <input id="email" class="input" name="email" type="email" value="" size="30" required /><br />
+    </div>
+    <div class="row">
+        <label for="phone_number">Phone Number (format: xxx-xxx-xxxx):</label><br />
+        <input id="phone_number" class="input" name="phone_number" type="tel" value="" pattern="^\d{3}-\d{3}-\d{4}$" size="30" /><br />
+    </div>
+    <div class="row">
+        <label for="message">Your question:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    </div>
+    <input id="submit_button" type="submit" value="Submit" enctype="multipart/form-data" />
+</form>
+
+</body>
 </html>
